@@ -1,0 +1,11 @@
+@import 'partials/base';
+@import 'partials/components';
+@import 'partials/mixins';
+@import 'partials/themes';
+@import 'partials/variables';
+
+body {
+    background-color: $background-color; 
+    color: $text-color; 
+    font-family: Arial, sans-serif; 
+}
