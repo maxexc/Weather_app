@@ -4,8 +4,6 @@ import viteLogo from '../public/vite.svg';
 import { setupCounter } from '../counter.js';
 import './styles/main.scss';
 
-// const viteLogo = '/Weather_app/vite.svg';
-
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
