@@ -47,8 +47,8 @@ async function searchWeather(event) {
     error404.querySelector('p').textContent = 'Oops! Not found location'
   }
 
-  // const APIKey = import.meta.env.VITE_API_KEY;
-  const APIKey = 'ef0b2575d7cb6c86d51b755ce7e5e8fc'
+  const APIKey = import.meta.env.VITE_API_KEY;
+  // const APIKey = 'ef0b2575d7cb6c86d51b755ce7e5e8fc'
   const city = searchInput.value.trim();
 
   if (city === '') {
