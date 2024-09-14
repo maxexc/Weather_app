@@ -1,11 +1,16 @@
-@import 'partials/base';
-@import 'partials/components';
-@import 'partials/mixins';
-@import 'partials/themes';
-@import 'partials/variables';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
-body {
-    background-color: $background-color; 
-    color: $text-color; 
-    font-family: Arial, sans-serif; 
-}
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'components/searchBox';
+@import 'components/weatherBox';
+@import 'components/weatherDetails';
+@import 'components/spinner';
+
+@import './base';
+
+@import 'layout/footer';
+
+@import 'themes/dark-theme';

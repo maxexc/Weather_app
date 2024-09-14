@@ -1,0 +1,53 @@
+@import '../base/variables';
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $spinner-wrapper-background-color;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid $spinner-color-1;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: spin 1s linear infinite;
+}
+
+.spinner::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-left: 4px solid $spinner-color-2;
+    border-bottom: 4px solid transparent;
+    animation: spin 0.5s linear infinite reverse;
+}
+
+.is-hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
