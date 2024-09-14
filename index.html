@@ -3,15 +3,78 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <link rel="icon" type="image/svg+xml" href="/Weather_app/assets/favicon-DAXwMSti.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <title>Weather App</title>
   <script type="module" crossorigin src="/Weather_app/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/Weather_app/assets/index-Cau2xjEP.css">
+  <link rel="stylesheet" crossorigin href="/Weather_app/assets/index-DuRfOYIN.css">
 </head>
 
 <body>
-  <div id="app"></div>
+  <main class="container">
+
+    <form class="search-box">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" placeholder="Enter your city">
+      <button type="submit" class="fa-solid fa-magnifying-glass"></button>
+    </form>
+
+    <div class="not-found">
+      <img src="" alt="Location not found">
+      <p>Oops! Not found location</p>
+    </div>
+
+    <div class="weather-box">
+      <img src="">
+      <p class="temperature"></p>
+      <p class="description"></p>
+    </div>
+
+    <div class="weather-details">
+      <div class="weather-info-left">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <div class="text">
+            <span></span>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="sunrise">
+          <i class="fas fa-sun"></i>
+          <p>Sunrise</p>
+          <span class="sunrise-text">00:00</span>
+        </div>
+      </div>
+      <div class="weather-info-right">
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span></span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+        <div class="sunset">
+          <i class="fas fa-moon"></i>
+          <p>Sunset</p>
+          <span class="sunset-text">00:00</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="spinner-wrapper is-hidden">
+    <div class="spinner"></div>
+  </div>
+
+  <footer>
+    <p>&copy; Created by maxexc</p>
+  </footer>
+
+  </div>
 </body>
 
 </html>
