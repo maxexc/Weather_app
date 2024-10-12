@@ -16,7 +16,7 @@ jobs:
           VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
         run: |
           npm install
-          npm run build
+          npm run build -- --mode=github
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
