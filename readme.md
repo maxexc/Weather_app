@@ -32,4 +32,3 @@ will be generated in the dist folder.
 
 The project uses Vite as the build tool and SASS for styling. You can modify the
 styles in the src/styles folder..
-
